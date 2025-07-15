@@ -1,0 +1,138 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #1c1e21;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    color: #606770;
+    margin-bottom: 1.5rem;
+}
+
+.search-box {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#flight-input {
+    flex-grow: 1;
+    padding: 0.75rem;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+#flight-input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+#search-button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#search-button:hover {
+    background-color: #0056b3;
+}
+
+.flight-info-container {
+    text-align: left;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+}
+
+.map-container {
+    height: 400px;
+    margin-top: 1.5rem;
+    border-radius: 6px;
+    border: 1px solid #dddfe2;
+}
+
+.metar-info-container {
+    text-align: left;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+}
+
+.recent-searches-container {
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+
+.recent-searches-container h4 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #606770;
+}
+
+.recent-searches-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.recent-search-item {
+    background-color: #e9ecef;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.recent-search-item:hover {
+    background-color: #ced4da;
+}
+
+.loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #007bff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin: 1rem auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

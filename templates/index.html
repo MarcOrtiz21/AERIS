@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AeroTrack - Rastreador de Vuelos</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>✈️ AeroTrack Casero</h1>
+        <p>Introduce un número de vuelo para empezar el seguimiento.</p>
+        <div class="search-box">
+            <input type="text" id="flight-input" placeholder="Ej: IBE6848">
+            <button id="search-button">Buscar</button>
+        </div>
+        <div id="recent-searches-container" class="recent-searches-container">
+            <!-- Las búsquedas recientes se mostrarán aquí -->
+        </div>
+        <div id="flight-info" class="flight-info-container">
+            <!-- La información del vuelo se mostrará aquí -->
+        </div>
+        <div id="metar-info" class="metar-info-container">
+            <!-- La información METAR se mostrará aquí -->
+        </div>
+        <div id="map" class="map-container"></div>
+    </div>
+    <script src="/static/script.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</body>
+</html>
